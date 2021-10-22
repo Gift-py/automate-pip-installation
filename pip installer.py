@@ -2,13 +2,13 @@
 import sys
 import subprocess
 
-my_file = open("requirements.txt", "r")
-content_list = my_file. readlines()
+my_file = open("sample.txt", "r") #you can use any file btw
+content_list = my_file. readlines() 
 
 libraries = []
 for i in range(len(content_list)):
-    y = content_list[i].split('=')
-    libraries.append(y[0])
+    y = content_list[i].split('=') #I stripped some parts here (something like this python-dotenv==0.15.0) i only needed this part 'python-dotenv'
+    libraries.append(y[0]) 
 
 #print(libraries)
 
